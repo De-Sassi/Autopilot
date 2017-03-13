@@ -36,7 +36,7 @@
 	</Item>
 	<Item Name="NI-myRIO-1900-030e16ac" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NI-myRIO-1900-030e16ac</Property>
-		<Property Name="alias.value" Type="Str">192.168.137.130</Property>
+		<Property Name="alias.value" Type="Str">192.168.137.153</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
