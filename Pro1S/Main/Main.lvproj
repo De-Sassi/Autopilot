@@ -31,7 +31,7 @@
 	</Item>
 	<Item Name="NI-myRIO-1900-030e16ac" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NI-myRIO-1900-030e16ac</Property>
-		<Property Name="alias.value" Type="Str">10.95.2.18</Property>
+		<Property Name="alias.value" Type="Str">172.22.11.2</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -109,11 +109,13 @@ AddOutputFilter chunkFilter
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
 		<Item Name="Main-Main.vi" Type="VI" URL="../Main-Main.vi"/>
+		<Item Name="SensorSubvorne.vi" Type="VI" URL="../SensorSubvorne.vi"/>
 		<Item Name="Sub_Drehzahlmessung.vi" Type="VI" URL="../Sub_Drehzahlmessung.vi"/>
 		<Item Name="Sub_Followline.vi" Type="VI" URL="../Sub_Followline.vi"/>
 		<Item Name="Sub_PWM_Lenkung.vi" Type="VI" URL="../Sub_PWM_Lenkung.vi"/>
 		<Item Name="Sub_PWM_Motor.vi" Type="VI" URL="../Sub_PWM_Motor.vi"/>
 		<Item Name="Sub_Sharp_gerade.vi" Type="VI" URL="../Sub_Sharp_gerade.vi"/>
+		<Item Name="Sub_SpeedCalc.vi" Type="VI" URL="../Sub_SpeedCalc.vi"/>
 		<Item Name="Sub_Strommessung.vi" Type="VI" URL="../Sub_Strommessung.vi"/>
 		<Item Name="test_drehzahl.vi" Type="VI" URL="../test_drehzahl.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -188,6 +190,7 @@ AddOutputFilter chunkFilter
 				<Item Name="myRIO v1.1 Open.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/myRIO v1.1 Open.vi"/>
 				<Item Name="myRIO v1.1 PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/myRIO v1.1 PWM Channels Enum.ctl"/>
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
+				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="Parse Scaling Constant Table.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Parse Scaling Constant Table.vi"/>
@@ -216,11 +219,12 @@ AddOutputFilter chunkFilter
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Sub_Sharp_Vorne_seitlich.vi" Type="VI" URL="../Sub_Sharp_Vorne_seitlich.vi"/>
-			<Item Name="Sub_SharpSensor.vi" Type="VI" URL="../Sub_SharpSensor.vi"/>
+			<Item Name="Sub_IR_front_rechts.vi" Type="VI" URL="../Sub_IR_front_rechts.vi"/>
+			<Item Name="Sub_Servo.vi" Type="VI" URL="../../../../Desktop/IR Sensor/Sub_Servo.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
