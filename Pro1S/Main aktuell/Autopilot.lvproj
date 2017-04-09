@@ -21,17 +21,14 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Project Documentation" Type="Folder">
-			<Item Name="Documentation Images" Type="Folder">
-				<Item Name="myRIO_Project_Diagram.gif" Type="Document" URL="../../../GitHub/Autopilot/Pro1S/Ganzes Programm/documentation/myRIO_Project_Diagram.gif"/>
-			</Item>
-			<Item Name="myRIO Project Documentation.html" Type="Document" URL="../../../GitHub/Autopilot/Pro1S/Ganzes Programm/documentation/myRIO Project Documentation.html"/>
+			<Item Name="myRIO Pins A_B.gif" Type="Document" URL="../myRIO Pins A_B.gif"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-030e16ac" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">NI-myRIO-1900-030e16ac</Property>
-		<Property Name="alias.value" Type="Str">192.168.137.133</Property>
+		<Property Name="alias.value" Type="Str">10.95.2.19</Property>
 		<Property Name="CCSymbols" Type="Str">OS,Linux;CPU,ARM;DeviceCode,762F;TARGET_TYPE,RT;FPGAPersonality,myRIO_FP_Default;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">762F</Property>
 		<Property Name="crio.family" Type="Str">ARMLinux</Property>
@@ -40,6 +37,7 @@
 		<Property Name="host.ResponsivenessCheckPingTimeout" Type="UInt">1000</Property>
 		<Property Name="host.TargetCPUID" Type="UInt">8</Property>
 		<Property Name="host.TargetOSID" Type="UInt">8</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="target.cleanupVisa" Type="Bool">false</Property>
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
@@ -108,16 +106,19 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Main-Main.vi" Type="VI" URL="../Main-Main.vi"/>
-		<Item Name="SensorSubvorne.vi" Type="VI" URL="../SensorSubvorne.vi"/>
-		<Item Name="Sub_Drehzahlmessung.vi" Type="VI" URL="../Sub_Drehzahlmessung.vi"/>
-		<Item Name="Sub_Followline.vi" Type="VI" URL="../Sub_Followline.vi"/>
-		<Item Name="Sub_PWM_Lenkung.vi" Type="VI" URL="../Sub_PWM_Lenkung.vi"/>
-		<Item Name="Sub_PWM_Motor.vi" Type="VI" URL="../Sub_PWM_Motor.vi"/>
-		<Item Name="Sub_Sharp_gerade.vi" Type="VI" URL="../Sub_Sharp_gerade.vi"/>
-		<Item Name="Sub_SpeedCalc.vi" Type="VI" URL="../Sub_SpeedCalc.vi"/>
-		<Item Name="Sub_Strommessung.vi" Type="VI" URL="../Sub_Strommessung.vi"/>
-		<Item Name="test_drehzahl.vi" Type="VI" URL="../test_drehzahl.vi"/>
+		<Item Name="MainV1.vi" Type="VI" URL="../MainV1.vi"/>
+		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
+		<Item Name="PWM_Lenkung.vi" Type="VI" URL="../PWM_Lenkung.vi"/>
+		<Item Name="PWM_Lenkung_Array.vi" Type="VI" URL="../PWM_Lenkung_Array.vi"/>
+		<Item Name="PWM_Motor_Array.vi" Type="VI" URL="../PWM_Motor_Array.vi"/>
+		<Item Name="PWM_Motor_Folgen.vi" Type="VI" URL="../PWM_Motor_Folgen.vi"/>
+		<Item Name="PWM_Motor_IR.vi" Type="VI" URL="../PWM_Motor_IR.vi"/>
+		<Item Name="Sensor_geradeaus_rechts.vi" Type="VI" URL="../Sensor_geradeaus_rechts.vi"/>
+		<Item Name="Sensor_schräg_links.vi" Type="VI" URL="../Sensor_schräg_links.vi"/>
+		<Item Name="Sensor_vorne_links.vi" Type="VI" URL="../Sensor_vorne_links.vi"/>
+		<Item Name="Sensor_vorne_rechts.vi" Type="VI" URL="../Sensor_vorne_rechts.vi"/>
+		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
+		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -190,9 +191,9 @@ AddOutputFilter chunkFilter
 				<Item Name="myRIO v1.1 Open.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/myRIO v1.1 Open.vi"/>
 				<Item Name="myRIO v1.1 PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/myRIO v1.1 PWM Channels Enum.ctl"/>
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Parse Scaling Constant Table.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Parse Scaling Constant Table.vi"/>
 				<Item Name="PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels Enum.ctl"/>
 				<Item Name="PWM Channels FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels FPGA Reference.ctl"/>
@@ -219,12 +220,10 @@ AddOutputFilter chunkFilter
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Main_Case_Control.ctl" Type="VI" URL="../Main_Case_Control.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Sub_IR_front_rechts.vi" Type="VI" URL="../Sub_IR_front_rechts.vi"/>
-			<Item Name="Sub_Servo.vi" Type="VI" URL="../../../../Desktop/IR Sensor/Sub_Servo.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
