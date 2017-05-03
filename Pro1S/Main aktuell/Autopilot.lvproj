@@ -2,7 +2,8 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{712A868C-E48C-4B65-A18B-D2E0B1F49E1D}" Type="Ref">/My Computer/Control/VerbindungGUIMyRio.lvlib/GUIInput</Property>
+	<Property Name="varPersistentID:{712A868C-E48C-4B65-A18B-D2E0B1F49E1D}" Type="Ref">/NI-myRIO-1900-030e16ac/LaptopGUI.lvlib/LaptopGUIInput</Property>
+	<Property Name="varPersistentID:{97F3DB56-5CC2-48A8-BCC4-DDF12D420BD1}" Type="Ref">/NI-myRIO-1900-030e16ac/LocalGUI.lvlib/LocalGUIInput</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -21,8 +22,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Control" Type="Folder" URL="../Control">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Control" Type="Folder">
+			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
+			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
 		</Item>
 		<Item Name="GUI" Type="Folder" URL="../GUI">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -128,6 +130,8 @@ AddOutputFilter chunkFilter
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
+		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
+		<Item Name="LaptopGUI.lvlib" Type="Library" URL="../Control/LaptopGUI.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
