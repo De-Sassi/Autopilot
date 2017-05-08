@@ -2,8 +2,10 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="varPersistentID:{57F3C436-FE30-4E68-9816-AB5F67E0D717}" Type="Ref">/NI-myRIO-1900-030e16ac/LocalGUI.lvlib/SetTimeStamp</Property>
 	<Property Name="varPersistentID:{712A868C-E48C-4B65-A18B-D2E0B1F49E1D}" Type="Ref">/My Computer/LaptopGUI.lvlib/LaptopGUIInput</Property>
 	<Property Name="varPersistentID:{97F3DB56-5CC2-48A8-BCC4-DDF12D420BD1}" Type="Ref">/NI-myRIO-1900-030e16ac/LocalGUI.lvlib/LocalGUIInput</Property>
+	<Property Name="varPersistentID:{C5EED114-0158-4D82-99EB-C9EF3328D3F2}" Type="Ref">/NI-myRIO-1900-030e16ac/LocalGUI.lvlib/Follow Time</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -128,6 +130,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
+		<Item Name="FollowsCar.vi" Type="VI" URL="../FollowsCar.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
