@@ -128,8 +128,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
-		<Item Name="pwm motor test.vi" Type="VI" URL="../../../../../../Desktop/pwm motor test.vi"/>
-		<Item Name="sensor messen.vi" Type="VI" URL="../../../../../../Desktop/sensor messen.vi"/>
+		<Item Name="Control 2.ctl" Type="VI" URL="../Control/Control 2.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
