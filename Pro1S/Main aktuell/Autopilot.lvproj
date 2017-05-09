@@ -128,8 +128,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
-		<Item Name="pwm motor test.vi" Type="VI" URL="../../../../../../Desktop/pwm motor test.vi"/>
-		<Item Name="sensor messen.vi" Type="VI" URL="../../../../../../Desktop/sensor messen.vi"/>
+		<Item Name="musik.vi" Type="VI" URL="../musik.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -236,6 +235,12 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
+				<Item Name="Play Sound File.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Play Sound File.vi"/>
+				<Item Name="Sound Output Task ID.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Task ID.ctl"/>
+				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
+				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
+				<Item Name="_Get Sound Error From Return Value.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_Get Sound Error From Return Value.vi"/>
+				<Item Name="Sound Output Wait.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Wait.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -245,6 +250,7 @@ AddOutputFilter chunkFilter
 			<Item Name="ReaderMyRio.vi" Type="VI" URL="../ReaderMyRio.vi"/>
 			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
 			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
