@@ -240,10 +240,10 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 			<Item Name="ReaderMyRio.vi" Type="VI" URL="../ReaderMyRio.vi"/>
 			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
 			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
+			<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
