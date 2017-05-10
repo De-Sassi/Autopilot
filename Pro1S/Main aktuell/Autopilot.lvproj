@@ -129,6 +129,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
 		<Item Name="IsCarInFront.vi" Type="VI" URL="../IsCarInFront.vi"/>
+		<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -243,7 +244,6 @@ AddOutputFilter chunkFilter
 			<Item Name="ReaderMyRio.vi" Type="VI" URL="../ReaderMyRio.vi"/>
 			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
 			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
-			<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
