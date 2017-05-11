@@ -133,6 +133,7 @@ AddOutputFilter chunkFilter
 		<Item Name="IsCarInFront.vi" Type="VI" URL="../IsCarInFront.vi"/>
 		<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 		<Item Name="FahrzustandSchaltung.vi" Type="VI" URL="../FahrzustandSchaltung.vi"/>
+		<Item Name="ABS_Motor.vi" Type="VI" URL="../ABS_Motor.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
