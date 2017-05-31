@@ -2,8 +2,6 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{712A868C-E48C-4B65-A18B-D2E0B1F49E1D}" Type="Ref">/My Computer/LaptopGUI.lvlib/LaptopGUIInput</Property>
-	<Property Name="varPersistentID:{97F3DB56-5CC2-48A8-BCC4-DDF12D420BD1}" Type="Ref">/NI-myRIO-1900-030e16ac/LocalGUI.lvlib/LocalGUIInput</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -22,21 +20,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Control" Type="Folder">
-			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
-			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
-		</Item>
-		<Item Name="GUI" Type="Folder" URL="../GUI">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="IP: 10.95.2.69//172.22.11.2" Type="Folder"/>
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="myRIO Pins A_B.gif" Type="Document" URL="../myRIO Pins A_B.gif"/>
 		</Item>
-		<Item Name="LaptopGUI.lvlib" Type="Library" URL="../Control/LaptopGUI.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../Sensoren/Sensorarray_aufloesen.vi"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-030e16ac" Type="RT myRIO">
@@ -119,20 +106,25 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Sensoren" Type="Folder" URL="../Sensoren">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="PWM" Type="Folder" URL="../PWM">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="MainV1.vi" Type="VI" URL="../MainV1.vi"/>
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
+		<Item Name="PWM_Lenkung.vi" Type="VI" URL="../PWM_Lenkung.vi"/>
+		<Item Name="PWM_Lenkung_Array.vi" Type="VI" URL="../PWM_Lenkung_Array.vi"/>
+		<Item Name="PWM_Motor_Array.vi" Type="VI" URL="../PWM_Motor_Array.vi"/>
+		<Item Name="PWM_Motor_Folgen.vi" Type="VI" URL="../PWM_Motor_Folgen.vi"/>
+		<Item Name="PWM_Motor_IR.vi" Type="VI" URL="../PWM_Motor_IR.vi"/>
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
-		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
-		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
-		<Item Name="IsCarInFront.vi" Type="VI" URL="../IsCarInFront.vi"/>
-		<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
-		<Item Name="FahrzustandSchaltung.vi" Type="VI" URL="../FahrzustandSchaltung.vi"/>
+		<Item Name="Alle_Sensoren.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Alle_Sensoren.vi"/>
+		<Item Name="Sensor_geradeaus_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_geradeaus_links.vi"/>
+		<Item Name="Sensor_geradeaus_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_geradeaus_rechts.vi"/>
+		<Item Name="Sensor_hinten_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_hinten_links.vi"/>
+		<Item Name="Sensor_hinten_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_hinten_rechts.vi"/>
+		<Item Name="Sensor_schräg_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_schräg_links.vi"/>
+		<Item Name="Sensor_schräg_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_schräg_rechts.vi"/>
+		<Item Name="Sensor_vorne_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_vorne_links.vi"/>
+		<Item Name="Sensor_vorne_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_vorne_rechts.vi"/>
+		<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensorarray_aufloesen.vi"/>
+		<Item Name="Sensoren_buendeln.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensoren_buendeln.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -166,6 +158,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Is FPGA Ref Available.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Is FPGA Ref Available.vi"/>
 				<Item Name="Lock Mutex.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Lock Mutex.vi"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
+				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="Mutex Collection.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Mutex Collection.ctl"/>
 				<Item Name="myRIO Generic Hardware Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/myRIO Generic Hardware Reference.ctl"/>
 				<Item Name="myRIO v1.0 Build Bitmask DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/DIO/vis/myRIO v1.0 Build Bitmask DIO.vi"/>
@@ -204,6 +197,7 @@ AddOutputFilter chunkFilter
 				<Item Name="myRIO v1.1 Open.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/myRIO v1.1 Open.vi"/>
 				<Item Name="myRIO v1.1 PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/myRIO v1.1 PWM Channels Enum.ctl"/>
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
+				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Parse Scaling Constant Table.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Parse Scaling Constant Table.vi"/>
@@ -231,23 +225,17 @@ AddOutputFilter chunkFilter
 				<Item Name="Validate Channels.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Validate Channels.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="NI_PID_autopid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_autopid.lvlib"/>
-				<Item Name="PID Online (Relay Feedback).vi" Type="VI" URL="/&lt;vilib&gt;/addons/control/pid/autopid.llb/PID Online (Relay Feedback).vi"/>
-				<Item Name="PID Table (Ultimate Gain and Frequency - Ziegler Nichols).vi" Type="VI" URL="/&lt;vilib&gt;/addons/control/pid/autopid.llb/PID Table (Ultimate Gain and Frequency - Ziegler Nichols).vi"/>
-				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
-				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
-				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
+				<Item Name="NI_Fuzzy_Logic_API.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/Fuzzy Logic/NI_Fuzzy_Logic_API.lvlib"/>
+				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 			</Item>
+			<Item Name="Main_Case_Control.ctl" Type="VI" URL="../Main_Case_Control.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="ReaderMyRio.vi" Type="VI" URL="../ReaderMyRio.vi"/>
-			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
-			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
-			<Item Name="Folgen zu Überholen.vi" Type="VI" URL="../Folgen zu Überholen.vi"/>
+			<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
