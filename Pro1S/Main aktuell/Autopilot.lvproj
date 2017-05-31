@@ -114,17 +114,14 @@ AddOutputFilter chunkFilter
 		<Item Name="PWM_Motor_Folgen.vi" Type="VI" URL="../PWM_Motor_Folgen.vi"/>
 		<Item Name="PWM_Motor_IR.vi" Type="VI" URL="../PWM_Motor_IR.vi"/>
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
-		<Item Name="Alle_Sensoren.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Alle_Sensoren.vi"/>
-		<Item Name="Sensor_geradeaus_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_geradeaus_links.vi"/>
-		<Item Name="Sensor_geradeaus_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_geradeaus_rechts.vi"/>
-		<Item Name="Sensor_hinten_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_hinten_links.vi"/>
-		<Item Name="Sensor_hinten_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_hinten_rechts.vi"/>
-		<Item Name="Sensor_schräg_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_schräg_links.vi"/>
-		<Item Name="Sensor_schräg_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_schräg_rechts.vi"/>
-		<Item Name="Sensor_vorne_links.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_vorne_links.vi"/>
-		<Item Name="Sensor_vorne_rechts.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensor_vorne_rechts.vi"/>
-		<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensorarray_aufloesen.vi"/>
-		<Item Name="Sensoren_buendeln.vi" Type="VI" URL="../../../../../Documents/GitHub/Autopilot/Pro1S/Main aktuell/Sensoren/Sensoren_buendeln.vi"/>
+		<Item Name="Sensor_schräg_links.vi" Type="VI" URL="../Sensor_schräg_links.vi"/>
+		<Item Name="Sensor_schräg_rechts.vi" Type="VI" URL="../Sensor_schräg_rechts.vi"/>
+		<Item Name="Sensor_vorne_links.vi" Type="VI" URL="../Sensor_vorne_links.vi"/>
+		<Item Name="Sensor_vorne_rechts.vi" Type="VI" URL="../Sensor_vorne_rechts.vi"/>
+		<Item Name="Sensor_geradeaus_links.vi" Type="VI" URL="../Sensor_geradeaus_links.vi"/>
+		<Item Name="Sensor_geradeaus_rechts.vi" Type="VI" URL="../Sensor_geradeaus_rechts.vi"/>
+		<Item Name="Sensor_hinten_links.vi" Type="VI" URL="../Sensor_hinten_links.vi"/>
+		<Item Name="Sensor_hinten_rechts.vi" Type="VI" URL="../Sensor_hinten_rechts.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -199,7 +196,6 @@ AddOutputFilter chunkFilter
 				<Item Name="Named Mutex.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/typedefs/Named Mutex.ctl"/>
 				<Item Name="NI_PID__prctrl compat.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID__prctrl compat.lvlib"/>
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
-				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Parse Scaling Constant Table.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Parse Scaling Constant Table.vi"/>
 				<Item Name="PWM Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels Enum.ctl"/>
 				<Item Name="PWM Channels FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/PWM/typedefs/PWM Channels FPGA Reference.ctl"/>
@@ -229,6 +225,7 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_Fuzzy_Logic_API.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/Fuzzy Logic/NI_Fuzzy_Logic_API.lvlib"/>
 				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 			</Item>
 			<Item Name="Main_Case_Control.ctl" Type="VI" URL="../Main_Case_Control.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
