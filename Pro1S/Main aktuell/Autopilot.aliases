@@ -1,5 +1,9 @@
 [My Computer]
+<<<<<<< HEAD
+My Computer = "10.207.8.19"
+=======
 My Computer = "10.207.12.18"
+>>>>>>> origin/master-mit-schneller-runde
 
 [NI-myRIO-1900-030e16ac]
 NI-myRIO-1900-030e16ac = "10.95.2.69"
