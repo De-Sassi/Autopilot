@@ -28,7 +28,6 @@
 		</Item>
 		<Item Name="GUI" Type="Folder">
 			<Item Name="GUILaptop.vi" Type="VI" URL="../GUI/GUILaptop.vi"/>
-			<Item Name="GUIReader.vi" Type="VI" URL="../GUI/GUIReader.vi"/>
 		</Item>
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="myRIO Pins A_B.gif" Type="Document" URL="../myRIO Pins A_B.gif"/>
@@ -121,9 +120,6 @@ AddOutputFilter chunkFilter
 		<Item Name="MainV1.vi" Type="VI" URL="../MainV1.vi"/>
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
 		<Item Name="PWM_Lenkung.vi" Type="VI" URL="../PWM_Lenkung.vi"/>
-		<Item Name="PWM_Lenkung_Array.vi" Type="VI" URL="../PWM_Lenkung_Array.vi"/>
-		<Item Name="PWM_Motor_Array.vi" Type="VI" URL="../PWM_Motor_Array.vi"/>
-		<Item Name="PWM_Motor_Folgen.vi" Type="VI" URL="../PWM_Motor_Folgen.vi"/>
 		<Item Name="PWM_Motor_IR.vi" Type="VI" URL="../PWM_Motor_IR.vi"/>
 		<Item Name="Sensor_geradeaus_rechts.vi" Type="VI" URL="../Sensor_geradeaus_rechts.vi"/>
 		<Item Name="Sensor_schräg_links.vi" Type="VI" URL="../Sensor_schräg_links.vi"/>
@@ -133,8 +129,9 @@ AddOutputFilter chunkFilter
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="Sensor_schräg_rechts.vi" Type="VI" URL="../Sensor_schräg_rechts.vi"/>
 		<Item Name="Sensor_geradeaus_links.vi" Type="VI" URL="../Sensor_geradeaus_links.vi"/>
-		<Item Name="CommunicationLibary.lvlib" Type="Library" URL="../Control/CommunicationLibary.lvlib"/>
 		<Item Name="Sensoren_buendeln.vi" Type="VI" URL="../Sensoren_buendeln.vi"/>
+		<Item Name="Array.vi" Type="VI" URL="../Array.vi"/>
+		<Item Name="CommunicationLibary.lvlib" Type="Library" URL="../Control/CommunicationLibary.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -241,7 +238,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
-			<Item Name="StreamCluster.ctl" Type="VI" URL="../../../../../../../../Desktop/Projek zusammenführung/1Durchlauf/Control/StreamCluster.ctl"/>
+			<Item Name="StreamCluster.ctl" Type="VI" URL="../Control/StreamCluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
