@@ -2,6 +2,7 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="varPersistentID:{9169828F-498D-4F61-BF86-9EACB4E0F64F}" Type="Ref">/NI-myRIO-1900-030e16ac/CommunicationLibary.lvlib/GUIInput</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -20,10 +21,21 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Control" Type="Folder">
+			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
+			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
+			<Item Name="StreamCluster.ctl" Type="VI" URL="../Control/StreamCluster.ctl"/>
+		</Item>
+		<Item Name="GUI" Type="Folder">
+			<Item Name="GUILaptop.vi" Type="VI" URL="../GUI/GUILaptop.vi"/>
+			<Item Name="GUIReader.vi" Type="VI" URL="../GUI/GUIReader.vi"/>
+		</Item>
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="myRIO Pins A_B.gif" Type="Document" URL="../myRIO Pins A_B.gif"/>
 		</Item>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../Sensorarray_aufloesen.vi"/>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-030e16ac" Type="RT myRIO">
@@ -106,6 +118,7 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
+		<Item Name="Sensoren_buendeln.vi" Type="VI" URL="../../../../../../../../Desktop/Projek zusammenführung/1Durchlauf/Sensoren/Sensoren_buendeln.vi"/>
 		<Item Name="MainV1.vi" Type="VI" URL="../MainV1.vi"/>
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
 		<Item Name="PWM_Lenkung.vi" Type="VI" URL="../PWM_Lenkung.vi"/>
@@ -121,6 +134,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="Sensor_schräg_rechts.vi" Type="VI" URL="../Sensor_schräg_rechts.vi"/>
 		<Item Name="Sensor_geradeaus_links.vi" Type="VI" URL="../Sensor_geradeaus_links.vi"/>
+		<Item Name="CommunicationLibary.lvlib" Type="Library" URL="../Control/CommunicationLibary.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -221,10 +235,13 @@ AddOutputFilter chunkFilter
 				<Item Name="Validate Channels.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/Utilities/vis/Validate Channels.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Stream Element Allocation Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Stream Element Allocation Mode.ctl"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
+			<Item Name="StreamCluster.ctl" Type="VI" URL="../../../../../../../../Desktop/Projek zusammenführung/1Durchlauf/Control/StreamCluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
