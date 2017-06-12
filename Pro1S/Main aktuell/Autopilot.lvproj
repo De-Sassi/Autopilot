@@ -2,7 +2,7 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{712A868C-E48C-4B65-A18B-D2E0B1F49E1D}" Type="Ref">/My Computer/LaptopGUI.lvlib/LaptopGUIInput</Property>
+	<Property Name="varPersistentID:{712A868C-E48C-4B65-A18B-D2E0B1F49E1D}" Type="Ref">/NI-myRIO-1900-030e16ac/LaptopGUI.lvlib/LaptopGUIInput</Property>
 	<Property Name="varPersistentID:{97F3DB56-5CC2-48A8-BCC4-DDF12D420BD1}" Type="Ref">/NI-myRIO-1900-030e16ac/LocalGUI.lvlib/LocalGUIInput</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -33,7 +33,6 @@
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="myRIO Pins A_B.gif" Type="Document" URL="../myRIO Pins A_B.gif"/>
 		</Item>
-		<Item Name="LaptopGUI.lvlib" Type="Library" URL="../Control/LaptopGUI.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../Sensoren/Sensorarray_aufloesen.vi"/>
 		</Item>
@@ -129,6 +128,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
+		<Item Name="LaptopGUI.lvlib" Type="Library" URL="../Control/LaptopGUI.lvlib"/>
 		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
 		<Item Name="IsCarInFront.vi" Type="VI" URL="../IsCarInFront.vi"/>
 		<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
