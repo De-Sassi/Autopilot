@@ -118,7 +118,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Sensoren_buendeln.vi" Type="VI" URL="../../../../../../../../Desktop/Projek zusammenführung/1Durchlauf/Sensoren/Sensoren_buendeln.vi"/>
 		<Item Name="MainV1.vi" Type="VI" URL="../MainV1.vi"/>
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
 		<Item Name="PWM_Lenkung.vi" Type="VI" URL="../PWM_Lenkung.vi"/>
@@ -135,6 +134,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Sensor_schräg_rechts.vi" Type="VI" URL="../Sensor_schräg_rechts.vi"/>
 		<Item Name="Sensor_geradeaus_links.vi" Type="VI" URL="../Sensor_geradeaus_links.vi"/>
 		<Item Name="CommunicationLibary.lvlib" Type="Library" URL="../Control/CommunicationLibary.lvlib"/>
+		<Item Name="Sensoren_buendeln.vi" Type="VI" URL="../Sensoren_buendeln.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
