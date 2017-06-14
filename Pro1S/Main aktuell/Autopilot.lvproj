@@ -33,9 +33,8 @@
 		<Item Name="Project Documentation" Type="Folder">
 			<Item Name="myRIO Pins A_B.gif" Type="Document" URL="../myRIO Pins A_B.gif"/>
 		</Item>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../Sensoren/Sensorarray_aufloesen.vi"/>
-		</Item>
+		<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../Sensoren/Sensorarray_aufloesen.vi"/>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-030e16ac" Type="RT myRIO">
@@ -124,6 +123,11 @@ AddOutputFilter chunkFilter
 		<Item Name="PWM" Type="Folder" URL="../PWM">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Control" Type="Folder">
+			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
+			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
+			<Item Name="StreamCluster.ctl" Type="VI" URL="../Control/StreamCluster.ctl"/>
+		</Item>
 		<Item Name="MainV1.vi" Type="VI" URL="../MainV1.vi"/>
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
@@ -132,6 +136,9 @@ AddOutputFilter chunkFilter
 		<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 		<Item Name="FahrzustandSchaltung.vi" Type="VI" URL="../FahrzustandSchaltung.vi"/>
 		<Item Name="GUICommunicationLibrary.lvlib" Type="Library" URL="../Control/GUICommunicationLibrary.lvlib"/>
+		<Item Name="FahrzustandSchaltungManuell.vi" Type="VI" URL="../FahrzustandSchaltungManuell.vi"/>
+		<Item Name="Folgen zu Überholen.vi" Type="VI" URL="../Folgen zu Überholen.vi"/>
+		<Item Name="FolgenEnum.ctl" Type="VI" URL="../Control/FolgenEnum.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -239,11 +246,6 @@ AddOutputFilter chunkFilter
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
-			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
-			<Item Name="Folgen zu Überholen.vi" Type="VI" URL="../Folgen zu Überholen.vi"/>
-			<Item Name="FahrzustandSchaltungManuell.vi" Type="VI" URL="../FahrzustandSchaltungManuell.vi"/>
-			<Item Name="StreamCluster.ctl" Type="VI" URL="../../../../../../Desktop/Projek zusammenführung/1Durchlauf/Control/StreamCluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
