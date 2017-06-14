@@ -148,7 +148,6 @@ AddOutputFilter chunkFilter
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
 		<Item Name="IsCarInFront.vi" Type="VI" URL="../IsCarInFront.vi"/>
-		<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 		<Item Name="FahrzustandSchaltung.vi" Type="VI" URL="../FahrzustandSchaltung.vi"/>
 		<Item Name="GUICommunicationLibrary.lvlib" Type="Library" URL="../Control/GUICommunicationLibrary.lvlib"/>
 		<Item Name="FahrzustandSchaltungManuell.vi" Type="VI" URL="../FahrzustandSchaltungManuell.vi"/>
