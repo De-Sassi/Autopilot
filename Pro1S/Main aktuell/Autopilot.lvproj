@@ -26,8 +26,8 @@
 			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
 			<Item Name="StreamCluster.ctl" Type="VI" URL="../Control/StreamCluster.ctl"/>
 		</Item>
-		<Item Name="GUI" Type="Folder" URL="../GUI">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="GUI" Type="Folder">
+			<Item Name="GUILaptop.vi" Type="VI" URL="../GUI/GUILaptop.vi"/>
 		</Item>
 		<Item Name="IP: 10.95.2.69//172.22.11.2" Type="Folder"/>
 		<Item Name="Project Documentation" Type="Folder">
@@ -117,11 +117,26 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Sensoren" Type="Folder" URL="../Sensoren">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="Sensoren" Type="Folder">
+			<Item Name="Alle_Sensoren.vi" Type="VI" URL="../Sensoren/Alle_Sensoren.vi"/>
+			<Item Name="Sensor_geradeaus_links.vi" Type="VI" URL="../Sensoren/Sensor_geradeaus_links.vi"/>
+			<Item Name="Sensor_geradeaus_rechts.vi" Type="VI" URL="../Sensoren/Sensor_geradeaus_rechts.vi"/>
+			<Item Name="Sensor_hinten_links.vi" Type="VI" URL="../Sensoren/Sensor_hinten_links.vi"/>
+			<Item Name="Sensor_hinten_rechts.vi" Type="VI" URL="../Sensoren/Sensor_hinten_rechts.vi"/>
+			<Item Name="Sensor_schräg_links.vi" Type="VI" URL="../Sensoren/Sensor_schräg_links.vi"/>
+			<Item Name="Sensor_schräg_rechts.vi" Type="VI" URL="../Sensoren/Sensor_schräg_rechts.vi"/>
+			<Item Name="Sensor_vorne_links.vi" Type="VI" URL="../Sensoren/Sensor_vorne_links.vi"/>
+			<Item Name="Sensor_vorne_rechts.vi" Type="VI" URL="../Sensoren/Sensor_vorne_rechts.vi"/>
+			<Item Name="Sensorarray_aufloesen.vi" Type="VI" URL="../Sensoren/Sensorarray_aufloesen.vi"/>
+			<Item Name="Sensoren_buendeln.vi" Type="VI" URL="../Sensoren/Sensoren_buendeln.vi"/>
 		</Item>
-		<Item Name="PWM" Type="Folder" URL="../PWM">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="PWM" Type="Folder">
+			<Item Name="PWM_Lenkung.vi" Type="VI" URL="../PWM/PWM_Lenkung.vi"/>
+			<Item Name="PWM_Lenkung_Array.vi" Type="VI" URL="../PWM/PWM_Lenkung_Array.vi"/>
+			<Item Name="PWM_Lenkung_Überholen.vi" Type="VI" URL="../PWM/PWM_Lenkung_Überholen.vi"/>
+			<Item Name="PWM_Motor_Array.vi" Type="VI" URL="../PWM/PWM_Motor_Array.vi"/>
+			<Item Name="PWM_Motor_Folgen.vi" Type="VI" URL="../PWM/PWM_Motor_Folgen.vi"/>
+			<Item Name="PWM_Motor_Überholen.vi" Type="VI" URL="../PWM/PWM_Motor_Überholen.vi"/>
 		</Item>
 		<Item Name="Control" Type="Folder">
 			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
