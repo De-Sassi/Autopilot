@@ -2,8 +2,7 @@
 <Project Type="Project" LVVersion="16008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{712A868C-E48C-4B65-A18B-D2E0B1F49E1D}" Type="Ref">/NI-myRIO-1900-030e16ac/LaptopGUI.lvlib/LaptopGUIInput</Property>
-	<Property Name="varPersistentID:{97F3DB56-5CC2-48A8-BCC4-DDF12D420BD1}" Type="Ref">/NI-myRIO-1900-030e16ac/LocalGUI.lvlib/LocalGUIInput</Property>
+	<Property Name="varPersistentID:{11E12E5A-85F1-4E0F-BF78-58614AD12D6E}" Type="Ref">/NI-myRIO-1900-030e16ac/GUICommunicationLibrary.lvlib/GUIInput</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -25,6 +24,7 @@
 		<Item Name="Control" Type="Folder">
 			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
 			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
+			<Item Name="StreamCluster.ctl" Type="VI" URL="../Control/StreamCluster.ctl"/>
 		</Item>
 		<Item Name="GUI" Type="Folder" URL="../GUI">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -128,11 +128,10 @@ AddOutputFilter chunkFilter
 		<Item Name="Drehzahlmessung.vi" Type="VI" URL="../Drehzahlmessung.vi"/>
 		<Item Name="Strommessung.vi" Type="VI" URL="../Strommessung.vi"/>
 		<Item Name="Rundenzeit.vi" Type="VI" URL="../Rundenzeit.vi"/>
-		<Item Name="LaptopGUI.lvlib" Type="Library" URL="../Control/LaptopGUI.lvlib"/>
-		<Item Name="LocalGUI.lvlib" Type="Library" URL="../Control/LocalGUI.lvlib"/>
 		<Item Name="IsCarInFront.vi" Type="VI" URL="../IsCarInFront.vi"/>
 		<Item Name="WriterMyRio.vi" Type="VI" URL="../WriterMyRio.vi"/>
 		<Item Name="FahrzustandSchaltung.vi" Type="VI" URL="../FahrzustandSchaltung.vi"/>
+		<Item Name="GUICommunicationLibrary.lvlib" Type="Library" URL="../Control/GUICommunicationLibrary.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="AI Channels Enum.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/AI/typedefs/AI Channels Enum.ctl"/>
@@ -235,14 +234,16 @@ AddOutputFilter chunkFilter
 				<Item Name="lvpidtkt.dll" Type="Document" URL="/&lt;vilib&gt;/addons/control/pid/lvpidtkt.dll"/>
 				<Item Name="myRIO v1.0 Write DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/myRIO v1.0/DIO/vis/myRIO v1.0 Write DIO.vi"/>
 				<Item Name="roboRIO v1.0 Write DIO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/DIO/vis/roboRIO v1.0 Write DIO.vi"/>
+				<Item Name="Stream Element Allocation Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/dex/Stream Element Allocation Mode.ctl"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="ReaderMyRio.vi" Type="VI" URL="../ReaderMyRio.vi"/>
 			<Item Name="Fahrart.ctl" Type="VI" URL="../Control/Fahrart.ctl"/>
 			<Item Name="GUICluster.ctl" Type="VI" URL="../Control/GUICluster.ctl"/>
 			<Item Name="Folgen zu Überholen.vi" Type="VI" URL="../Folgen zu Überholen.vi"/>
+			<Item Name="FahrzustandSchaltungManuell.vi" Type="VI" URL="../FahrzustandSchaltungManuell.vi"/>
+			<Item Name="StreamCluster.ctl" Type="VI" URL="../../../../../../Desktop/Projek zusammenführung/1Durchlauf/Control/StreamCluster.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
